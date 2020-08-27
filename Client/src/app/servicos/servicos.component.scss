@@ -1,0 +1,33 @@
+// border: 2px #8C1358 dotted;
+
+.service-single-list.ul-li {
+  ul {
+    li {
+
+      padding: 0;
+
+      // &:hover {
+      //   border: 1px #8C1358 dotted;
+      //   cursor: pointer;
+      // }
+
+      a {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+        padding: 30px;
+
+        &:hover {
+          border: 1px #8C1358 dotted;
+        cursor: pointer;
+        }
+
+        .selected {
+          border: 1px #8C1358 dotted !important;
+        }
+      }
+      
+    }
+  }
+}

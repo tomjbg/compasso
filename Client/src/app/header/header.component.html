@@ -1,0 +1,102 @@
+<header>
+    <div id="main-menu" class="main-menu-container tbg navbar-fixed-top">
+        <div class="main-menu">
+
+            <div class="container">
+                <div class="row">
+                    <div class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <a class="navbar-brand text-uppercase" href="#">
+                                <!-- <img src="assets/img/logo/logo.png" alt="logo"> -->
+                            </a>
+                        </div>
+                        <!-- /.navbar-header -->
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul id="main-nav" class="nav navbar-nav pull-left">
+                                <!-- <li><a href="#">Home</a></li> -->
+                                <li class="menu-item-has-children ul-li-block">
+                                    <a>Somos</a>
+                                    <ul class="sub-menu">
+                                        <li><a [routerLink]="[ '/compassocoolab' ]" routerLinkActive="active">Compasso Coolab</a></li>
+                                        <li><a [routerLink]="[ '/identidade' ]" routerLinkActive="active">Identidade</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children ul-li-block">
+                                    <a [routerLink]="['/fazemos']" routerLinkActive="active">Fazemos</a>
+                                    <ul class="sub-menu">
+                                            <li><a [routerLink]="[ '/fazemos/branding' ]" routerLinkActive="active">Branding</a></li>
+                                            <li><a [routerLink]="[ '/fazemos/livemarketing' ]" routerLinkActive="active">Live Marketing</a></li>
+                                            <li><a [routerLink]="[ '/fazemos/educacao' ]" routerLinkActive="active">Educação</a></li>
+                                            <li><a [routerLink]="[ '/fazemos/midia' ]" routerLinkActive="active">Mídia</a></li>
+                                            <li><a [routerLink]="[ '/fazemos/consultoria' ]" routerLinkActive="active">Consultoria</a></li>
+                                            <li><a [routerLink]="[ '/fazemos/outsourcing' ]" routerLinkActive="active">Outsourcing</a></li>
+                                    </ul>
+                                
+                                </li>
+                                <li><a [routerLink]="['/portifolio']" routerLinkActive="active">Portifolio</a></li>
+                                <li><a [routerLink]="['/blog']" routerLinkActive="active">Blog</a></li>
+                                <li><a [routerLink]="['/contato']" routerLinkActive="active">Contato</a></li>
+                                <!-- <li><a [routerLink]="[ '/login']">Login</a></li> -->
+                            </ul>
+                            <ul class="nav navbar-nav pull-right">
+                                    <li>
+                                        
+                                    <iframe src="http://tunein.com/embed/player/s269231/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+
+                                    </li>
+                                    <li><a [routerLink]="[ '/login']">Login</a></li>
+                            </ul>
+                            <!-- /#main-nav -->
+                        </nav>
+                        <!-- /.navbar-collapse -->
+                        <!-- <div class="try-now-btn text-capitalize text-center">
+                              <a href="#">try now</a>
+                          </div> -->
+
+                  <!-- <li class="menu-item-has-children ul-li-block"><a href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href=index.html>Home 1</a></li>
+                                <li><a href=index-2.html>Home 2</a></li>
+                                <li><a href=index-3.html>Home 3</a></li>
+                                <li><a href=index-4.html>Home 4</a></li>
+                            </ul>
+                        </li> -->
+
+                    </div>
+                    <!-- /.navbar navbar-default -->
+
+                    <div class="mobile-menu">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo"></a>
+                        </div>
+                        <nav>
+                            <ul>
+                                    <li class="menu-item-has-children ul-li-block">
+                                            <a>Somos</a>
+                                            <ul class="sub-menu">
+                                                <li><a [routerLink]="[ '/compassocoolab' ]" routerLinkActive="active">Compasso Coolab</a></li>
+                                                <li><a [routerLink]="[ '/identidade' ]" routerLinkActive="active">Identidade</a></li>
+                                            </ul>
+                                        </li>
+                                <li><a [routerLink]="['/servicos']" routerLinkActive="active">Serviços</a></li>
+                                <li><a [routerLink]="['/portifolio']" routerLinkActive="active">Portifolio</a></li>
+                                <li><a [routerLink]="['/blog']" routerLinkActive="active">Blog</a></li>
+                                <!-- <li><a [routerLink]="['/sobre']" routerLinkActive="active">Sobre</a></li> -->
+                                <li><a [routerLink]="['/contato']" routerLinkActive="active">Contato</a></li>
+                                <li><a [routerLink]="[ '/login']">Login</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.full-main-menu -->
+    </div>
+    <!-- #main-menu -->
+    <!-- Main Menu end -->
+</header>

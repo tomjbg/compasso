@@ -1,0 +1,167 @@
+<div class="row">
+
+
+  <form [formGroup]="frmCadHomeSomos" enctype="multipart/form-data" class="form-horizontal col-md-8 col-md-offset-2 frm-restrita">
+
+    <h3 class="text-center">Compasso</h3>
+
+    <div class="col-md-10 col-md-offset-1">
+
+        <fieldset class="form-group">
+            <label for="titulo">Imagem</label> <br>
+            <!-- <img [hidden]="ImagePreview === undefined" src="{{ImagePreview}}" alt="Foto do serviço"> -->
+            <img [hidden]="imagemPreview === undefined" [src]="imagemPreview" alt="Foto de Somos">
+            <input type="file" multiple="multiple" name="imagem" id="imagem" formControlName="imagem" (change)="onChangeImage($event.target.files)"
+              class="form-control input-sm">
+    
+          </fieldset>
+
+
+      <fieldset class="form-group">
+        <label for="titulo">Titulo</label>
+        <input type="text" formControlName="titulo" [value]="HomeSomos.titulo" name="Titulo" id="titulo" class="form-control input-sm">
+
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label for="texto">Texto</label>
+        <textarea class="form-control" formControlName="texto" [value]="HomeSomos.texto" name="DescricaoCurta" id="descricaocurta" rows="2"></textarea>
+      </fieldset>
+
+
+      <fieldset class="form-group">
+
+        <input type="button" (click)="postHomeSomos(HomeSomos)" value="Cadastrar" class="btn btn-lg btn-success btn-block">
+        <input type="button" (click)="getHomeSomos()" value="Listar" class="btn btn-lg btn-success btn-block">
+
+      </fieldset>
+
+    </div>
+
+    <br><br>
+
+
+    <table class="table tbl">
+      <thead>
+        <th hidden>Id</th>
+        <th>Titulo</th>
+        <th>Texto</th>
+        <th></th>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let hs of lstHomeSomos">
+          <td hidden>{{hs.id}}</td>
+          <td>{{hs.imagem}}</td>
+          <td>{{hs.titulo}}</td>
+          <td>{{hs.texto}}</td>
+        </tr>
+
+        <!-- <tr *ngFor="let s of ServicosVM">
+                <td hidden>{{s.ativo}}</td>
+                <td>{{s.titulo}}</td>
+                <td>
+                  <img src='data:image/jpg;base64,{{s.imagemData}}' width="100px" alt="Imagem">
+                </td>
+                <td>{{s.descricaoCurta}}</td>
+                <td>{{s.descricaoLonga}}</td>
+                <td>
+                  <select class="form-control">
+                    <option *ngFor="let vantagem of s.listaVantagens" value="{{vantagem.descricao}}">{{vantagem.descricao}}</option>
+                  </select>
+                </td>
+                <td class="text-center">
+                  <button class="btn btn-sm btn-warning">Editar</button>
+                  &nbsp;
+                  <button class="btn btn-sm btn-danger">Deletar</button>
+                </td>
+                
+              </tr> -->
+      </tbody>
+
+    </table>
+
+  </form>
+
+
+
+  <!-- <ul class="nav nav-tabs">
+    <li role="presentation">
+      <a href="#compasso" aria-controls="compasso" role="tab" data-toggle="tab">Compasso</a>
+    </li>
+    <li role="presentation">
+      <a href="#identidade" aria-controls="identidade" role="tab" data-toggle="tab">Identidade</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div role="tabpanel" id="compasso" class="tab-pane">
+
+    </div>
+
+    <div role="tabpanel" id="identidade" class="tab-pane">
+
+      <form [formGroup]="frmCadIdentidade" enctype="multipart/form-data" class="form-horizontal col-md-8 col-md-offset-2 frm-restrita">
+
+        <h3 class="text-center">Identidade Organizacional</h3>
+
+        <div class="col-md-10 col-md-offset-1">
+
+
+          <fieldset class="form-group">
+            <label for="missao">Missão</label>
+            <input type="text" formControlName="missao" name="Missao" id="missao" class="form-control input-sm">
+
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="visao">Visão</label>
+            <input type="text" formControlName="visao" name="Visao" id="visao" class="form-control input-sm">
+
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="valores">Valores</label>
+            <input type="text" formControlName="valores" name="Valores" id="valores" class="form-control input-sm">
+
+          </fieldset>
+
+          <fieldset class="form-group">
+
+            <input type="button" (click)="postHomeSomos(HomeSomos)" value="Cadastrar" class="btn btn-lg btn-success btn-block">
+            <input type="button" (click)="getHomeSomos()" value="Listar" class="btn btn-lg btn-success btn-block">
+
+          </fieldset>
+
+        </div>
+
+        <br><br>
+
+
+        <table class="table tbl">
+          <thead>
+            <th hidden>Id</th>
+            <th>Titulo</th>
+            <th>Texto</th>
+            <th></th>
+          </thead>
+          <tbody>
+
+            <tr *ngFor="let i of Identidades">
+              <td hidden>{{i.id}}</td>
+              <td>{{i.titulo}}</td>
+              <td>{{i.texto}}</td>
+            </tr>
+
+            
+          </tbody>
+
+        </table>
+
+      </form>
+
+    </div>
+  </div> -->
+
+
+</div>

@@ -1,0 +1,109 @@
+<div class="row">
+
+    <form [formGroup]="frmCadPortifolio" enctype="multipart/form-data" class="form-horizontal col-md-8 col-md-offset-2 frm-restrita">
+  
+      <h3 class="text-center">Cadastro de serviços</h3>
+  
+      <div class="col-md-10 col-md-offset-1">
+  
+        <fieldset class="form-group">
+          <label for="titulo">Titulo</label>
+          <input type="text" formControlName="titulo" name="Titulo" id="titulo" class="form-control input-sm">
+  
+        </fieldset>
+  
+        <fieldset class="form-group">
+          <label for="descricaocurta">Descrição curta</label>
+          <textarea class="form-control" formControlName="descricaocurta" name="DescricaoCurta" id="descricaocurta" rows="2"></textarea>
+        </fieldset>
+  
+        <fieldset class="form-group">
+          <label for="descricaolonga">Descrição Longa</label>
+          <textarea class="form-control" formControlName="descricaolonga" name="DescricaoLonga" id="descricaolonga" rows="3"></textarea>
+        </fieldset>
+  
+        <fieldset class="form-group">
+          <label for="titulo">Imagem</label> <br>
+          <img src="" alt="">
+          <input type="file" multiple="multiple" name="imagem" id="imagem" (change)="onChangeImage($event.target.files)" class="form-control input-sm">
+  
+        </fieldset>
+  
+        <fieldset class="form-group">
+          
+          <input type="text" #txtvantagem class="form-control input-sm inline-block w85" maxlength="100" placeholder="Digite uma vantagem">
+          &nbsp;
+          <button (click)="addVantagens(txtvantagem)" class="btn btn-sm btn-default inline-block">Adicionar</button>
+  
+          <div>
+  
+            <table id="tblVantagens" class="table">
+              <thead><th></th><th></th></thead>
+              <tbody>
+                <tr>
+                  <td></td><td></td>
+                </tr>
+                <!-- <tr *ngFor="let vant of ServicoVM.ListaVantagens">
+                  <td class="w100">{{vant.Descricao}}</td><td><span class="btn btn-sm btn-danger">Remover</span></td>
+                </tr> -->
+              </tbody>
+            </table>
+  
+          </div>
+  
+        </fieldset>
+  
+        <fieldset class="form-group">
+            
+          <input type="button" (click)="postHomeSomos(HomeSomos)" value="Cadastrar" class="btn btn-lg btn-success btn-block">
+        </fieldset>
+  
+      </div>
+  
+    </form>
+  
+    <br><br>
+  
+    <table class="table tbl">
+      <thead>
+        <th hidden>Ativo?</th>
+        <th>Titulo</th>
+        <th>Imagem</th>
+        <th>Descrição curta</th>
+        <th>Descrição longa</th>
+        <th>Vantagens</th>
+        <th></th>
+      </thead>
+      <tbody>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <!-- <tr *ngFor="let s of ServicosVM">
+          <td hidden>{{s.ativo}}</td>
+          <td>{{s.titulo}}</td>
+          <td>
+            <img src='data:image/jpg;base64,{{s.imagemData}}' width="100px" alt="Imagem">
+          </td>
+          <td>{{s.descricaoCurta}}</td>
+          <td>{{s.descricaoLonga}}</td>
+          <td>
+            <select class="form-control">
+              <option *ngFor="let vantagem of s.listaVantagens" value="{{vantagem.descricao}}">{{vantagem.descricao}}</option>
+            </select>
+          </td>
+          <td class="text-center">
+            <button class="btn btn-sm btn-warning">Editar</button>
+            &nbsp;
+            <button class="btn btn-sm btn-danger">Deletar</button>
+          </td>
+          
+        </tr> -->
+      </tbody>
+  
+    </table>
+  
+  </div>

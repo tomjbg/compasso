@@ -1,0 +1,39 @@
+                            "node_modules/font-awesome/scss/font-awesome.scss",
+                            "node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
+                            "node_modules/angular-bootstrap-md/scss/mdb-free.scss",
+
+                            "node_modules/chart.js/dist/Chart.js",
+                            "node_modules/hammerjs/hammer.min.js"
+
+
+
+                            "./src/assets/css/bootstrap.min.css",
+                            "./src/assets/css/owl.carousel.css",
+                            "./src/assets/css/ionicons.min.css",
+                            "./src/assets/css/menu.css",
+                            "./src/assets/css/meanmenu.css",
+                            "./src/assets/css/video.min.css",
+                            "./src/assets/css/animate.css",
+                            "./src/assets/css/slick.css",
+                            "./src/assets/css/slick-theme.css",
+                            "./src/assets/css/style.css",
+                            "./src/assets/css/responsive.css",
+
+
+                            "./src/assets/js/jquery-2.1.4.min.js",
+                            "./src/assets/js/bootstrap.min.js",
+                            "./src/assets/js/owl.carousel.min.js",
+                            "./src/assets/js/jarallax.js",
+                            "./src/assets/js/jquery.typer.js",
+                            "./src/assets/js/jquery.meanmenu.js",
+                            "./src/assets/js/jquery.magnific-popup.min.js",
+                            "./src/assets/js/jquery.counterup.min.js",
+                            "./src/assets/js/waypoints.min.js",
+                            "./src/assets/js/jquery.filterizr.js",
+                            "./src/assets/js/plyr.js",
+                            "./src/assets/js/jquery.mb.YTPlayer.js",
+                            "./src/assets/js/slick.min.js",
+                            "./src/assets/js/script.js"
+
+
+../fonts/glyphicons-halflings-regular.ttf
